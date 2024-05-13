@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main_nav{
+    padding: 10px 80px;
+    z-index: 1000;
+}
+
+.nav_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    height: 70px;
+    width: 70px;
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav_link{
+    display: flex;
+    gap: 20px;
+}
+.nav_link li a{
+    font-size: 17px;
+    color: gray;
+}
+.hero_section{
+    display: flex;
+    height: 95vh;
+    gap: 20px;
+    padding: 0px 80px;
+}
+.hero_left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.hero_left_content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero_left_content h1{
+    font-size: 65px;
+
+
+}
+.gradient_text{
+    color: transparent;
+    /* Apply linear gradient background */
+    background-image: linear-gradient(to right, #0bab1b, #c25119);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.primary_btn{
+    background-color: green;
+    border: none;
+    padding: 12px 15px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    max-width: fit-content;
+    border-radius: 20px;
+}
+.left_text{
+    line-height: 23px;
+}
+.hero_right{
+    flex: 1;
+    overflow: hidden;
+  
+}
+.hero_right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.action{
+    display: none;
+}
+.mobile_menu{
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background-color: white;
+    transition: 0.30s ease-in all;
+    padding: 40px 20px;
+
+}
+.reset{
+    top:10% !important;
+}
+.mobile_menu .mobile_link{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    
+}
+.cancel{
+    display: none;
+    transition: 1s ease;
+}
+.hamburger{
+    transition: 1s ease;
+}
+@media(max-width:834px){
+    .hero_section{
+        padding: 0 16px;
+    
+    }
+    .hero_left_content{
+        
+    }
+    .gradient_text{
+        font-size: 30px !important;
+    }
+    .main_nav{
+        padding: 10px 16px;
+    }
+}
+@media(max-width:450px){
+    .hero_section{
+        flex-direction: column-reverse;
+        height: auto;        
+    }
+    .nav_link{
+        display: none;
+    }
+    .action{
+        display: block;
+        font-size: 23px;
+    }
+}
