@@ -8,7 +8,12 @@ ul{
     padding: 0;
     list-style: none;
 }
-
+.green_text{
+    color: rgb(3, 49, 3);
+}
+.light_green{
+    color: #0bab1b;
+}
 .main_nav{
     padding: 10px 80px;
     z-index: 1000;
@@ -146,4 +151,217 @@ ul{
         display: block;
         font-size: 23px;
     }
+    .hero_section{
+        padding: 40px 16px;
+    }
+}
+
+/* After Section Begins */
+.after_section{
+    padding: 80px;
+    background-color: rgb(230, 242, 235);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.section_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.section_header h1{
+    color: rgb(3, 49, 3);
+    font-size: 40px;
+}
+.line{
+    height: 1px; 
+    width: 5%;
+    background-color:rgb(3, 49, 3)
+}
+.section_header p{
+    width: 40%;
+    font-size: 14px; 
+    text-align: center;
+    line-height: 18px;
+}
+.box{
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box .box_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box_icon i{
+    background-color: rgb(3, 49, 3);
+    color: white;
+    padding: 20px;
+    border-radius: 100%;
+}
+.box_container{
+    display: flex;
+  
+}
+.box_heading{
+    font-size: 25px; 
+    text-align: center;
+}
+.gray_text{
+    color: rgb(112, 109, 109);
+}
+.box_text{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.green_box{
+    background-color: rgb(3, 49, 3);
+    
+}
+.green_box .box_heading{
+    color: #0bab1b !important;
+}
+.green_box .box_icon i{
+    background-color: white;
+    color: rgb(3, 49, 3);
+}
+.green_box .box_text{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* After section Responsive check */
+@media(max-width:834px){
+    .after_section{
+        padding: 80px 16px ;
+    }
+    .box{
+        padding: 20px;
+    }
+}
+@media(max-width:450px){
+    .after_section{
+        padding: 40px 16px; 
+        gap: 50px;
+
+    }
+    .box_container{
+        flex-direction: column;
+    }
+    .section_header p{
+        width: 80%;
+       
+    }
+}
+
+/* End of After Section */
+
+/* Banner Section Starts Here */
+.banner{
+    display: flex;
+    background-color: rgb(38, 71, 38);
+    min-height: 100vh;
+    align-items: center;
+}
+.banner_left{
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.banner_item h1{
+    font-size: 50px;
+}
+.banner_item p{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 16px;
+}
+.banner_right{
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+.banner_right img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.banner_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner_list_item{
+    background-color: rgb(230, 242, 235);
+    color: #047810;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    transition: all 1s ease;
+}
+.banner_list_item:hover{
+    background-color:#047810;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-20px);
+}
+.banner_list_item:nth-of-type(1){
+    border-top-right-radius: 20px;
+}
+.banner_list_item:nth-of-type(3){
+    border-bottom-right-radius: 20px;
+}
+.list_text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Banner Responsiveness Starts Here */
+@media(max-width:834px){
+    .banner{
+        flex-direction: column-reverse;
+        height: 100vh;
+        gap: 20px;
+    }
+    .banner_left{
+        padding: 16px;
+    }
+    .banner_item h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .banner_item p{
+        text-align: center;
+    }
+ 
+}
+@media(max-width:450px){
+    .banner{
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 20px;
+    }
+}
+
+/* Banner Responsiveness Ends Here */
+/* Banner Section Ends Here */
+
+/* Testimonial Section Starts Here */
+.testimonial_section{
+    padding: 100px 80px;
 }
